@@ -15,7 +15,7 @@ const FriendListWidget = ({ userId}) => {
 
     const getFriends = async () => {
     	
-    	const response = await fetch(`http://localhost:000/users/${userId}/friends`, {
+    	const response = await fetch(`https://social-media-app-server-rose.vercel.app/users/${userId}/friends`, {
     		method: "GET",
     		headers: { Authorization: `Bearer ${token}` }
     	});

@@ -35,7 +35,7 @@ const PostWidget = ({
   const primary = palette.primary.main;
 
   const patchLike = async () => {
-    const response = await fetch(`http://localhost:8000/posts/${postId}/like`, {
+    const response = await fetch(`https://social-media-app-server-rose.vercel.app/posts/${postId}/like`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -51,7 +51,7 @@ const PostWidget = ({
 
  const patchDelete = async () => {
   console.log("clicked");
-  const response = await fetch(`http://localhost:8000/posts/${postId}/delete`, {
+  const response = await fetch(`https://social-media-app-server-rose.vercel.app/posts/${postId}/delete`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -82,7 +82,7 @@ const PostWidget = ({
     
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`http://localhost:8000/assets/${picturePath}`} />
+          src={`https://social-media-app-server-rose.vercel.app/assets/${picturePath}`} />
       )}
       <FlexBetween mt="0.25rem">
 

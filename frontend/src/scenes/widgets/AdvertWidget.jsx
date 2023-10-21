@@ -22,7 +22,7 @@ const AdvertWidget = () => {
 			<img 
 			width="100%" 
 			height="auto" 
-			src="http://localhost:8000/assets/info4.jpeg" 
+			src="https://social-media-app-server-rose.vercel.app/assets/info4.jpeg" 
 			alt="advert"
 			style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
 			 />

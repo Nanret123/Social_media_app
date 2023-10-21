@@ -26,7 +26,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
 
     const getuser = async () => {
-    	const response = await fetch(`http://localhost:8000/users/${userId}`, {
+    	const response = await fetch(`https://social-media-app-server-rose.vercel.app/users/${userId}`, {
     		method: "GET",
     		headers: { Authorization: `Bearer ${token}` }
     	});

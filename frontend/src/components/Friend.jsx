@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, location, userPicturePath}) => {
     const isFriend = friends.find(friend => friend._id === friendId);
 
     const patchFriend = async () => {
-    	const response = await fetch(`http://localhost:8000/users/${_id}/${friendId}`, {
+    	const response = await fetch(`https://social-media-app-server-rose.vercel.app/users/${_id}/${friendId}`, {
       	method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,
